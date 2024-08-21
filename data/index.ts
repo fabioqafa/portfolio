@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -49,12 +49,12 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently coding and exploring Account Abstraction",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "account_abstr.jpg",
     spareImg: "/grid.svg",
   },
   {
@@ -72,35 +72,34 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Account Abstraction",
+    des: "A minimalistic account abstraction smart contract using both Ethereum's and zkSync's architecture, allowing users to use a smart contract instead of an EOA to send transactions.",
+    iconLists: ["/solidity.svg", "/foundry.jpg"],
+    link: "https://github.com/fabioqafa/foundry-account-abstraction",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Decentralized Stablecoin",
+    des: "A decentralized stablecoin mechanism that is pegged on a 1:1 ratio to USD, using wETH and wBTC as collaterals on a 2:1 ratio.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    iconLists: ["/solidity.svg", "/foundry.jpg"],
+    link: "https://github.com/fabioqafa/foundry-defi-stablecoin",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Real Estate Tokenization",
+    des: "A platform enabling fractionization of real estate using tokens.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    iconLists: ["/solidity.svg", "/ts.svg", "/nestjs.png", "/re.svg"],
+    link: "",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Solana NFT",
+    des: "An NFT smart contract allowing users to lock their tokens in a vault and mint NFTs using Solana's SPL Token Standard",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    iconLists: ["/solana-sol-logo.svg", "/rust.jpg"],
+    link: "https://github.com/fabioqafa/nft_vault_swap",
   },
 ];
 
@@ -173,31 +172,55 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: ".NET Developer Intern - IMB",
+    desc: "Assisted in the development and debugging of an ERP platform using C#, Javascript and SQL.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: ".NET Developer - Kreatx",
+    desc: "Maintained and developed public sector projects, including the platforms of the Albanian Courts and MIT.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Blockchain & Back-End Developer - New Ventures Shpk",
+    desc: "Led the dev of two web3 projects using TypeScript and NestJS, integrating smart contracts with REST APIs, including API integration with Pago.al for token usage.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/exp4.svg",
+  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
+];
+
+export const academicBackground = [
+  {
+    id: 1,
+    title: "Queen Mary University of London",
+    desc: "Master of Science: Blockchain in Business and Society.",
+    className: "md:col-span-2",
+    thumbnail: "/qmul2.jpg",
   },
   {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    id: 2,
+    title: "Tel Aviv University",
+    desc: "Professional Training: Cybersecurity and Blockchain.",
+    className: "md:col-span-2", // change to md:col-span-2A
+    thumbnail: "/tau.jpeg",
+  },
+  {
+    id: 3,
+    title: "University of Tirana",
+    desc: "Bachelor of Science. Computer Science.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/ut.png",
   },
 ];
 
@@ -205,13 +228,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://www.github.com/fabioqafa"
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/qafafabio"
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/fabio-qafa-0002bb179/"
   },
 ];
